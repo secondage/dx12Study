@@ -20,7 +20,7 @@ Platform::String^ TrackingKey = "Tracking";
 // 从文件中加载顶点和像素着色器，然后实例化立方体几何图形。
 Sample3DSceneRenderer::Sample3DSceneRenderer(const std::shared_ptr<DX::DeviceResources>& deviceResources) :
 	m_loadingComplete(false),
-	m_radiansPerSecond(XM_PIDIV4),	// 每秒旋转 45 度
+	m_radiansPerSecond(XM_PI),	// 每秒旋转 180 度
 	m_angle(0),
 	m_tracking(false),
 	m_mappedConstantBuffer(nullptr),
